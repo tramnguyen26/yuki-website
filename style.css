@@ -1402,3 +1402,8 @@ body{
         font-size:14px !important;
     }
 }
+/* AI HERO IMAGE */
+.ai-hero{
+    background:url("images/ai-new.jpg") center center / cover no-repeat !important;
+    min-height:420px !important;
+}
