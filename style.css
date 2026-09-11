@@ -1113,8 +1113,16 @@ body{
 
 .ai-hero{
     text-align:center;
-    padding:70px 20px 45px;
-    background:#eee8df;
+    padding:100px 20px;
+    background-image:url("images/ai-new.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:420px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 .ai-hero h1{
