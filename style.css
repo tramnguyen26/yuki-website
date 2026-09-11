@@ -908,9 +908,23 @@ body{
 
     /* NỘI DUNG CARD */
     .service h3,
-    .service p,
-    .service a{
-        text-shadow:0 1px 3px rgba(255,255,255,.45);
+.service p,
+.service a{
+    text-shadow:none !important;
+    letter-spacing:0 !important;
+}
+
+.service h3{
+    line-height:1.25 !important;
+}
+
+.service p{
+    line-height:1.5 !important;
+}
+
+.service a{
+    line-height:1.2 !important;
+}
         position:relative !important;
         z-index:2 !important;
     }
