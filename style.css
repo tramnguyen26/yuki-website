@@ -901,8 +901,8 @@ body{
         content:"";
         position:absolute;
         inset:0;
-        background:rgba(239,231,220,.48);
-        z-index:1;
+        background:transparent !important;
+        
     }
 
 
