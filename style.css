@@ -907,7 +907,7 @@ body{
 
 
     /* NỘI DUNG CARD */
-    .service h3,
+.service h3,
 .service p,
 .service a{
     text-shadow:none !important;
@@ -925,9 +925,6 @@ body{
 .service a{
     line-height:1.2 !important;
 }
-        position:relative !important;
-        z-index:2 !important;
-    }
 
 
     .service h3{
