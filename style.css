@@ -1349,3 +1349,48 @@ body{
         padding:11px 18px;
     }
 }
+/* ===== AI LIST - CÂN ĐỐI ===== */
+
+.ai-list{
+    max-width:1200px !important;
+    gap:24px !important;
+    padding:30px 40px 65px !important;
+}
+
+.ai-list > div{
+    min-height:210px !important;
+    padding:32px 28px !important;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.ai-list h3{
+    font-size:23px !important;
+    margin-bottom:16px !important;
+}
+
+.ai-list p{
+    font-size:16px !important;
+    line-height:1.7 !important;
+}
+@media (max-width:700px){
+
+    .ai-list{
+        padding:20px 15px 45px !important;
+        gap:14px !important;
+    }
+
+    .ai-list > div{
+        min-height:190px !important;
+        padding:22px 16px !important;
+    }
+
+    .ai-list h3{
+        font-size:18px !important;
+    }
+
+    .ai-list p{
+        font-size:14px !important;
+    }
+}
