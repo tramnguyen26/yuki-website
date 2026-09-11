@@ -1059,3 +1059,24 @@ body{
     border-radius:5px !important;
     text-shadow:none !important;
 }
+/* ===== CHỮ CARD - ĐỒNG NHẤT ===== */
+
+.service h3{
+    margin:0 0 12px !important;
+    line-height:1.25 !important;
+    letter-spacing:0 !important;
+    text-shadow:none !important;
+}
+
+.service p{
+    margin:0 0 14px !important;
+    line-height:1.5 !important;
+    letter-spacing:0 !important;
+    text-shadow:none !important;
+}
+
+.service a{
+    line-height:1.2 !important;
+    letter-spacing:1px !important;
+    text-shadow:none !important;
+}
