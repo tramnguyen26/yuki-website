@@ -1109,3 +1109,43 @@ body{
 .service a{
     margin-top:0 !important;
 }
+/* ===== TEXT CARD - LUXURY ===== */
+
+.service::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48%;
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.30),
+        rgba(0,0,0,0)
+    );
+    z-index:1;
+    pointer-events:none;
+}
+
+.service h3,
+.service p,
+.service a{
+    position:relative;
+    z-index:2;
+    background:transparent !important;
+    padding:0 !important;
+    text-shadow:0 1px 2px rgba(255,255,255,.35);
+}
+
+.service h3{
+    margin-bottom:8px !important;
+}
+
+.service p{
+    margin-bottom:12px !important;
+}
+
+.service a{
+    color:#f4e5cf !important;
+    font-weight:500 !important;
+}
