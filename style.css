@@ -3743,3 +3743,310 @@ img{
 a{
     color:inherit;
 }
+/* =====================================================
+   YUKI — TÀI CHÍNH & TÍN DỤNG
+===================================================== */
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#eee8df;
+    color:#40291b;
+    font-family:Georgia,"Times New Roman",serif;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    border-bottom:1px solid #c9ab8d;
+    background:#eee8df;
+}
+
+header nav{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:22px 4%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:4px;
+}
+
+header nav a{
+    color:#40291b;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    letter-spacing:1.5px;
+}
+
+/* ================= TRANG TÀI CHÍNH ================= */
+
+.finance-page{
+    width:100%;
+    max-width:1500px;
+    margin:0 auto;
+    padding:70px 4% 90px;
+}
+
+/* ================= TIÊU ĐỀ ================= */
+
+.finance-title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.finance-title h1{
+    margin:0;
+    font-size:46px;
+    font-weight:500;
+    letter-spacing:5px;
+}
+
+.finance-title .line{
+    width:65px;
+    height:1px;
+    margin:20px auto;
+    background:#b99261;
+}
+
+.finance-title h2{
+    margin:0 0 15px;
+    font-size:20px;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+.finance-title p{
+    max-width:750px;
+    margin:0 auto;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    line-height:1.8;
+    color:#665344;
+}
+
+/* ================= 3 KHUNG ================= */
+
+.finance-list{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:25px;
+}
+
+.finance-card{
+    width:100%;
+    min-height:330px;
+    padding:34px 30px;
+    background:#f7f1e9;
+    border:1px solid #c9ab8d;
+    border-radius:10px;
+}
+
+.finance-number{
+    margin-bottom:22px;
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    color:#a47742;
+}
+
+.finance-card h2{
+    margin:0 0 22px;
+    font-size:21px;
+    font-weight:500;
+    line-height:1.4;
+    letter-spacing:1px;
+}
+
+.finance-card p{
+    margin:0;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    line-height:2;
+    color:#594739;
+}
+
+/* ================= VÌ SAO YUKI ================= */
+
+.finance-why{
+    max-width:900px;
+    margin:65px auto 0;
+    padding-top:40px;
+    border-top:1px solid #c9ab8d;
+    text-align:center;
+}
+
+.finance-why h2{
+    margin:0 0 25px;
+    font-size:22px;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+.finance-why p{
+    margin:0;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+    line-height:2;
+    color:#594739;
+}
+
+/* ================= LƯU Ý ================= */
+
+.finance-notice{
+    max-width:900px;
+    margin:35px auto 0;
+    padding:22px 26px;
+    background:#f3ece3;
+    border:1px solid #d0bda9;
+    text-align:center;
+}
+
+.finance-notice p{
+    margin:0;font-family:Arial,sans-serif;
+    font-size:12px;
+    line-height:1.8;
+    color:#725f4e;
+}
+
+/* ================= FOOTER ================= */
+
+.finance-footer{
+    margin-top:55px;
+    text-align:center;
+}
+
+.finance-footer h2{
+    margin:0 0 28px;
+    font-size:20px;
+    font-weight:500;
+    line-height:1.6;
+}
+
+.finance-button{
+    display:inline-block;
+    padding:12px 26px;
+    border:1px solid #b99261;
+    color:#40291b;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+    font-size:11px;
+    letter-spacing:1.7px;
+    transition:.25s ease;
+}
+
+.finance-button:hover{
+    background:#40291b;
+    color:#fff;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:1000px){
+
+    .finance-page{
+        padding:55px 3% 70px;
+    }
+
+    .finance-list{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .finance-card:last-child{
+        grid-column:1 / -1;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:650px){
+
+    header nav{
+        padding:18px 20px;
+    }
+
+    .logo{
+        font-size:21px;
+    }
+
+    .finance-page{
+        padding:45px 18px 60px;
+    }
+
+    .finance-title{
+        margin-bottom:38px;
+    }
+
+    .finance-title h1{
+        font-size:30px;
+        letter-spacing:3px;
+        line-height:1.3;
+    }
+
+    .finance-title h2{
+        font-size:18px;
+        line-height:1.5;
+    }
+
+    .finance-title p{
+        font-size:13px;
+    }
+
+    .finance-list{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .finance-card:last-child{
+        grid-column:auto;
+    }
+
+    .finance-card{
+        min-height:auto;
+        padding:28px 23px;
+    }
+
+    .finance-card h2{
+        font-size:19px;
+    }
+
+    .finance-card p{
+        font-size:13px;
+        line-height:1.85;
+    }
+
+    .finance-why{
+        margin-top:45px;
+        padding-top:30px;
+    }
+
+    .finance-why h2{
+        font-size:19px;
+    }
+
+    .finance-why p{
+        font-size:13px;
+    }
+
+    .finance-notice{
+        padding:18px 16px;
+    }
+
+    .finance-footer h2{
+        font-size:17px;
+    }
+}
