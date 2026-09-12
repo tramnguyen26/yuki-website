@@ -1649,3 +1649,60 @@ body{
         font-size:18px !important;
     }
 }
+/* ===== SERVICE CARD — TEXT FIXED AT BOTTOM ===== */
+
+.service{
+    position:relative;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-end !important;
+    overflow:hidden !important;
+    padding:22px !important;
+}
+
+/* Khối chữ nằm gọn phía dưới */
+.service h3,
+.service p,
+.service a{
+    position:relative;
+    z-index:5;
+    margin-left:0 !important;
+    margin-right:0 !important;
+}
+
+/* Tiêu đề */
+.service h3{
+    margin-top:auto !important;
+    margin-bottom:10px !important;
+}
+
+/* Mô tả */
+.service p{
+    margin-top:0 !important;
+    margin-bottom:14px !important;
+    line-height:1.5 !important;
+}
+
+/* Nút */
+.service a{
+    align-self:flex-start !important;
+    margin-top:0 !important;
+}
+
+/* Nền nhẹ phía sau phần chữ để dễ đọc */
+.service::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:48%;
+    background:linear-gradient(
+        to top,
+        rgba(238,232,223,.96),
+        rgba(238,232,223,.78),
+        rgba(238,232,223,0)
+    );
+    z-index:1;
+    pointer-events:none;
+}
