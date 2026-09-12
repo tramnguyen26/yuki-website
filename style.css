@@ -1419,26 +1419,13 @@ body{
     object-fit:cover;
     display:block;
 }
-🔥 NHẬN THIẾT KẾ ẢNH & VIDEO QUẢNG CÁO BẰNG AI
-
-Bạn đang bán hàng nhưng:
-❌ Không có ngân sách chụp ảnh chuyên nghiệp
-❌ Mất nhiều thời gian tìm mẫu, thuê studio
-❌ Nội dung đăng mạng xã hội chưa đủ bắt mắt?
-
-✨ Mình nhận làm trọn gói AI Content cho cá nhân, shop và doanh nghiệp.
-
-📸 Ảnh sản phẩm – ảnh thời trang – lifestyle – beauty
-🎬 Video quảng cáo ngắn TikTok / Reels / Shorts
-💡 Lên concept sáng tạo theo sản phẩm và thương hiệu
-📝 Hỗ trợ caption & ý tưởng nội dung
-🎨 Có thể xây dựng hình ảnh đồng nhất cho cả tháng content
-
-Bạn chỉ cần gửi sản phẩm + yêu cầu, phần còn lại để mình xử lý.
-
-💰 Chi phí linh hoạt theo số lượng và nhu cầu.
-Có thể làm 1 mẫu thử trước để bạn xem chất lượng.
-
-📩 Inbox để gửi sản phẩm và nhận tư vấn concept phù hợp.
-
-👉 Biến một sản phẩm thành cả một bộ content chuyên nghiệp — nhanh, linh hoạt và tiết kiệm chi phí.
+.service:nth-child(1),
+.service:nth-child(2),
+.service:nth-child(3),
+.service:nth-child(9){
+    border:1.5px solid #c49a5a !important;
+    box-shadow:
+        0 0 6px rgba(196,154,90,.65),
+        0 0 16px rgba(196,154,90,.32),
+        inset 0 0 3px rgba(196,154,90,.18) !important;
+}
