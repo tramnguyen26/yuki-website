@@ -1649,55 +1649,47 @@ body{
         font-size:18px !important;
     }
 }
-/* ===== SERVICE CARD — TEXT GROUPED AT BOTTOM ===== */
+/* ===== SERVICE TEXT: BOTTOM LEFT ===== */
 
 .service{
-    position:relative;
-    display:grid !important;
-    grid-template-rows:auto auto auto !important;
-    align-content:end !important;
-    gap:0 !important;
-    overflow:hidden !important;
+    position:relative !important;
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-end !important;
+    align-items:flex-start !important;
     padding:22px !important;
+    overflow:hidden !important;
 }
 
-/* Tất cả nội dung nằm thành một cụm ở đáy */
-.service h3{
-    position:relative;
-    z-index:5;
-    margin:0 0 10px 0 !important;
-    line-height:1.25 !important;
-}
-
-.service p{
-    position:relative;
-    z-index:5;
-    margin:0 0 14px 0 !important;
-    line-height:1.5 !important;
-}
-
+/* Toàn bộ chữ căn trái */
+.service h3,
+.service p,
 .service a{
-    position:relative;
-    z-index:5;
-    display:inline-block !important;
-    width:max-content !important;
-    margin:0 !important;
+    position:relative !important;
+    z-index:10 !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    text-align:left !important;
 }
 
-/* Lớp nền nhẹ giúp chữ dễ đọc */
-.service::after{
-    content:"";
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:45%;
-    background:linear-gradient(
-        to top,
-        rgba(238,232,223,.97),
-        rgba(238,232,223,.78),
-        rgba(238,232,223,0)
-    );
-    z-index:1;
-    pointer-events:none;
+/* Tiêu đề */
+.service h3{
+    width:100% !important;
+    margin:0 0 8px !important;
+}
+
+/* Mô tả */
+.service p{
+    width:100% !important;
+    margin:0 0 14px !important;
+}
+
+/* Nút */
+.service a{
+    display:inline-block !important;
+    width:auto !important;
+    margin:0 !important;
 }
