@@ -3622,3 +3622,8 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
         font-size:9px !important;
     }
 }
+/* ===== KHOẢNG CÁCH TRÊN 6 MỤC ===== */
+
+.yuki-content-menu{
+    margin-top:35px !important;
+}
