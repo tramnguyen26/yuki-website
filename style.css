@@ -3673,3 +3673,73 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
         min-height:130px !important;
     }
 }
+margin-bottom:35px;
+    }
+
+    .ai-page-header h1{
+        font-size:31px;
+        letter-spacing:4px;
+    }
+
+    .ai-page-header p{
+        font-size:10px;
+        letter-spacing:2px;
+    }
+
+    .ai-list{
+        grid-template-columns:1fr;
+        gap:18px;
+    }
+
+    .ai-list > div{
+        padding:27px 23px;
+        border-radius:10px;
+    }
+
+    .ai-list h2{
+        font-size:19px;
+    }
+
+    .ai-list h3{
+        font-size:12px;
+        margin-top:25px;
+    }
+
+    .ai-list p{
+        font-size:13px;
+        line-height:1.8;
+    }
+
+    .ai-page-footer{
+        margin-top:45px;
+    }
+
+    .ai-page-footer h2{
+        font-size:17px;
+        line-height:1.6;
+    }
+}
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Georgia,"Times New Roman",serif;
+    background:#eee8df;
+    color:#40291b;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    color:inherit;
+}
