@@ -71,31 +71,31 @@
         <div class="service">
             <h3> BẤT ĐỘNG SẢN</h3>
             <p>Kết nối mua bán, thuê và tìm kiếm bất động sản.</p>
-        <a href="ai.html">XEM CHI TIẾT →</a>
+        <a href="batdongsan.html">XEM CHI TIẾT →</a>
         </div>
 
         <div class="service">
             <h3>BẢO HIỂM</h3>
             <p>Kết nối các nhu cầu bảo hiểm phù hợp.</p>
-         <a href="ai.html">XEM CHI TIẾT →</a>
+         <a href="baohiem.html">XEM CHI TIẾT →</a>
         </div>
 
         <div class="service">
             <h3> XE</h3>
             <p>Kết nối nhu cầu mua bán và dịch vụ về xe.</p>
-         <a href="ai.html">XEM CHI TIẾT →</a>
+         <a href="xe.html">XEM CHI TIẾT →</a>
         </div>
 
         <div class="service">
             <h3>VĂN PHÒNG & MẶT BẰNG</h3>
             <p>Kết nối nhu cầu thuê và tìm kiếm mặt bằng.</p>
-        <a href="ai.html">XEM CHI TIẾT →</a>
+        <a href="vanphong.html">XEM CHI TIẾT →</a>
         </div>
 
         <div class="service">
             <h3> DU LỊCH & KHÁCH SẠN</h3>
             <p>Kết nối dịch vụ du lịch và lưu trú phù hợp.</p>
-         <a href="ai.html">XEM CHI TIẾT →</a>
+         <a href="dulich.html">XEM CHI TIẾT →</a>
         </div>
 
     <div class="service">
@@ -105,21 +105,132 @@
 </div></div>
 
 </section>
-
 <div style="text-align:center; padding:70px 20px 60px; background:#eee8df;">
+
     <div style="font-family:Georgia,'Times New Roman',serif; font-size:30px; color:#4a3020; line-height:1.5;">
         Chào mừng bạn đến với
-        <span style="display:inline-block; margin-left:12px; font-family:Georgia,'Times New Roman',serif; font-size:58px; font-style:normal; font-weight:400; letter-spacing:7px; color:#8a6034; text-shadow:none;">YUKI</span>
+
+        <span style="
+            display:inline-block;
+            margin-left:12px;
+            font-family:Georgia,'Times New Roman',serif;
+            font-size:50px;
+            font-style:nor;
+            font-weight:400;
+            letter-spacing:7px;
+            color:#8a6034;
+            text-shadow:0 0 10px rgba(196,154,90,.35);
+        ">YUKI</span>
     </div>
 
-    <div style="display:flex; align-items:center; justify-content:center; gap:20px; margin-top:22px;">
-        <span style="display:block; width:75px; height:1px; background:#c8a36c;"></span>
-        <span style="font-family:Georgia,'Times New Roman',serif; font-size:15px; font-style:italic; letter-spacing:1.3px; color:#765a45;">
+    <div style="
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+        margin-top:22px;
+    ">
+
+        <span style="
+            display:block;
+            width:75px;
+            height:1px;
+            background:#c8a36c;
+        "></span>
+
+        <span style="
+            font-family:Georgia,'Times New Roman',serif;
+            font-size:15px;
+            font-style:italic;
+            letter-spacing:1.3px;
+            color:#765a45;
+        ">
             Nơi kết nối những ý tưởng, dịch vụ và giải pháp phù hợp dành cho bạn.
         </span>
-        <span style="display:block; width:75px; height:1px; background:#c8a36c;"></span>
-    </div>
-</div>
 
+        <span style="
+            display:block;
+            width:75px;
+            height:1px;
+            background:#c8a36c;
+        "></span>
+
+    </div>
+
+    <div style="
+        margin-top:22px;
+        font-family:Georgia,'Times New Roman',serif;
+        font-size:20px;
+        color:#b58a52;
+    ">✦</div>
+
+</div>
+<!-- YUKI FLOATING CONTACT CARD -->
+<div id="yukiCard" class="yuki-card">
+
+    <div class="yuki-avatar">Y</div>
+
+    <div class="yuki-info">
+        <div class="yuki-name">YuKi</div>
+        <div class="yuki-sub">Tư vấn-Kết nối</div>
+    </div>
+
+    <div class="yuki-actions">
+        <a href="tel:0333280809">Gọi</a>
+        <a href="http://zalo.me/0333280809">Zalo</a>
+    </div>
+
+</div>
+<script>
+const yukiCard = document.getElementById("yukiCard");
+
+let dragging = false;
+let offsetX = 0;
+let offsetY = 0;
+
+yukiCard.addEventListener("pointerdown", function(e) {
+
+    if (e.target.closest("a")) return;
+
+    dragging = true;
+
+    const rect = yukiCard.getBoundingClientRect();
+
+    yukiCard.style.left = rect.left + "px";
+    yukiCard.style.top = rect.top + "px";
+    yukiCard.style.right = "auto";
+    yukiCard.style.bottom = "auto";
+
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+
+    yukiCard.setPointerCapture(e.pointerId);
+});
+
+yukiCard.addEventListener("pointermove", function(e) {
+
+    if (!dragging) return;
+
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+
+    const maxX = window.innerWidth - yukiCard.offsetWidth;
+    const maxY = window.innerHeight - yukiCard.offsetHeight;
+
+    x = Math.max(8, Math.min(x, maxX - 8));
+    y = Math.max(8, Math.min(y, maxY - 8));
+
+    yukiCard.style.left = x + "px";
+    yukiCard.style.top = y + "px";
+});
+
+yukiCard.addEventListener("pointerup", function() {
+    dragging = false;
+});
+
+yukiCard.addEventListener("pointercancel", function() {
+    dragging = false;
+});
+</script>
 </body>
-</html>
+</html> 
