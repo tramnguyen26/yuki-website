@@ -3213,3 +3213,48 @@ grid-template-columns:1fr;
         grid-row:2 !important;
     }
 }
+/* ===== 6 MỤC BÊN PHẢI - THU GỌN ===== */
+
+.yuki-content-grid{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 260px !important;
+    gap:20px !important;
+    align-items:start !important;
+}
+
+.yuki-content-menu{
+    width:260px !important;
+    display:flex !important;
+    flex-direction:column !important;
+    gap:8px !important;
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.yuki-content-card{
+    width:260px !important;
+    min-height:58px !important;
+    height:58px !important;
+    padding:9px 13px !important;
+    box-sizing:border-box !important;
+    border-radius:9px !important;
+    margin:0 !important;
+}
+
+.yuki-content-card h3{
+    font-size:14px !important;
+    line-height:1.2 !important;
+    margin:0 0 4px !important;
+}
+
+.yuki-content-card p{
+    font-size:10px !important;
+    line-height:1.25 !important;
+    margin:0 !important;
+}
+
+/* Giữ 4 ảnh là phần trọng tâm */
+.yuki-latest{
+    width:100% !important;
+    margin:0 !important;
+}
