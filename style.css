@@ -3160,3 +3160,56 @@ grid-template-columns:1fr;
         grid-row:2 !important;
     }
 }
+/* ===== FIX: 6 MỤC PHẢI ĐỨNG NGANG HÀNG VỚI KHUNG ẢNH ===== */
+
+.yuki-content-grid{
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 240px !important;
+    grid-template-rows:auto !important;
+    gap:18px !important;
+    align-items:start !important;
+}
+
+.yuki-latest{
+    grid-column:1 !important;
+    grid-row:1 !important;
+    margin:0 !important;
+}
+
+.yuki-content-menu{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    margin:0 !important;
+    padding:0 !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+    gap:7px !important;
+    align-self:start !important;
+}
+
+.yuki-content-card{
+    margin:0 !important;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+    .yuki-content-grid{
+        grid-template-columns:1fr !important;
+        gap:18px !important;
+    }
+
+    .yuki-latest{
+        grid-column:1 !important;
+        grid-row:1 !important;
+    }
+
+    .yuki-content-menu{
+        grid-column:1 !important;
+        grid-row:2 !important;
+    }
+}
