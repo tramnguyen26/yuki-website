@@ -1429,3 +1429,107 @@ body{
         0 0 16px rgba(196,154,90,.32),
         inset 0 0 3px rgba(196,154,90,.18) !important;
 }
+/* ==============================
+   YUKI WELCOME SIGNATURE
+   ============================== */
+
+.welcome-bottom{
+    text-align:center;
+    padding:70px 20px 65px;
+    background:#eee8df;
+    color:#4a3020;
+}
+
+/* Dòng chính */
+.welcome-title{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:30px;
+    font-weight:400;
+    letter-spacing:1px;
+    line-height:1.5;
+}
+
+/* YUKI tựa logo */
+.welcome-title span{
+    display:inline-block;
+    margin-left:10px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:68px;
+    font-weight:400;
+    font-style:italic;
+    letter-spacing:5px;
+    color:#8a6034;
+
+    text-shadow:
+        0 0 8px rgba(196,154,90,.22),
+        0 2px 1px rgba(120,80,40,.12);
+}
+
+/* Dòng slogan */
+.welcome-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    margin-top:18px;
+}
+
+.welcome-line i{
+    width:70px;
+    height:1px;
+    display:block;
+    background:#c8a36c;
+    opacity:.65;
+}
+
+.welcome-line p{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:17px;
+    font-style:italic;
+    letter-spacing:1.5px;
+    color:#765a45;
+}
+
+/* Điểm nhấn phía dưới */
+.welcome-flourish{
+    margin-top:22px;
+    font-size:18px;
+    color:#b58a52;
+    opacity:.8;
+    text-shadow:0 0 8px rgba(181,138,82,.35);
+}
+
+
+/* MOBILE */
+@media (max-width:700px){
+
+    .welcome-bottom{
+        padding:50px 15px 45px;
+    }
+
+    .welcome-title{
+        font-size:21px;
+    }
+
+    .welcome-title span{
+        display:block;
+        margin:4px 0 0;
+        font-size:54px;
+        letter-spacing:4px;
+    }
+
+    .welcome-line{
+        gap:10px;
+    }
+
+    .welcome-line i{
+        width:30px;
+    }
+
+    .welcome-line p{
+        font-size:14px;
+        line-height:1.6;
+        letter-spacing:.8px;
+    }
+}
