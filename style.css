@@ -3627,3 +3627,49 @@ grid-template-columns: repeat(2, minmax(0, 1fr));
 .yuki-content-menu{
     margin-top:35px !important;
 }
+/* ===== GIÃN 9 MỤC DỊCH VỤ TRANG CHỦ ===== */
+
+.yuki-services,
+.services-grid,
+.service-grid{
+    gap:24px !important;
+}
+
+/* Nếu 9 mục đang nằm trong các card */
+.yuki-service-card,
+.service-card{
+    margin:0 !important;
+    padding:28px 24px !important;
+    min-height:150px !important;
+}
+
+/* Khoảng cách riêng giữa các hàng */
+.yuki-services > *,
+.services-grid > *,
+.service-grid > *{
+    margin-bottom:0 !important;
+}
+
+/* Tablet */
+@media (max-width:1000px){
+    .yuki-services,
+    .services-grid,
+    .service-grid{
+        gap:20px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width:600px){
+    .yuki-services,
+    .services-grid,
+    .service-grid{
+        gap:16px !important;
+    }
+
+    .yuki-service-card,
+    .service-card{
+        padding:22px 18px !important;
+        min-height:130px !important;
+    }
+}
