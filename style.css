@@ -1416,7 +1416,7 @@ body{
 .ai-hero img{
     width:100%;
     height:420px;
-    object-fit:cover;
+    object-fit:contain;
     display:block;
 }
 .service:nth-child(1),
@@ -1868,5 +1868,1189 @@ grid-template-columns:1fr;
 
     .cta h2{
         font-size:27px;
+    }
+}
+/* ===== YUKI CONTENT – 6 MỤC ===== */
+
+.yuki-content{
+    padding:80px 6% 70px;
+    background:#eee8df;
+    border-top:1px solid #d2b99d;
+}
+
+.yuki-content-intro{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.yuki-content-line{
+    width:55px;
+    height:1px;
+    background:#b89468;
+    margin:0 auto 25px;
+}
+
+.yuki-content-intro h2{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:38px;
+    font-weight:400;
+    letter-spacing:5px;
+    color:#40291b;
+}
+
+.yuki-content-intro p{
+    margin:16px auto 0;
+    max-width:650px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:16px;
+    line-height:1.7;
+    color:#765d4b;
+}
+
+/* GRID */
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:block;
+}
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/* CARD */
+
+.yuki-content-card{
+    min-height:190px;
+    padding:30px 28px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    text-decoration:none;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:18px;
+    transition:all .3s ease;
+}
+
+.yuki-content-card h3{
+    margin:0 0 10px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:22px;
+    font-weight:400;
+    letter-spacing:2px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    line-height:1.6;
+    color:#705f52;
+}
+
+/* HOVER */
+
+.yuki-content-card:hover{
+    transform:translateY(-5px);
+    border-color:#c49a5a;
+    box-shadow:
+        0 0 6px rgba(196,154,90,.45),
+        0 0 16px rgba(196,154,90,.18);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:55px 14px 45px;
+    }
+
+    .yuki-content-intro{
+        margin-bottom:30px;
+    }
+
+    .yuki-content-intro h2{
+        font-size:28px;
+        letter-spacing:3px;
+    }
+
+    .yuki-content-intro p{
+        font-size:14px;
+        padding:0 10px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .yuki-content-card{
+        min-height:180px;
+        padding:20px 17px;
+        border-radius:14px;
+    }
+
+    .yuki-content-card h3{
+        font-size:17px;
+        letter-spacing:1px;
+    }
+
+    .yuki-content-card p{
+        font-size:12px;
+        line-height:1.5;
+    }
+}
+/* ===== YUKI CONTENT - GALLERY + MENU ===== */
+
+.yuki-content{
+    padding:80px 6%;
+    background:#eee8df;
+    border-top:1px solid #d2b99d;
+}
+
+.yuki-content-intro{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.yuki-content-line{
+    width:55px;
+    height:1px;
+    background:#b89468;
+    margin:0 auto 22px;
+}
+
+.yuki-content-intro h2{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:36px;
+    font-weight:400;
+    letter-spacing:4px;
+    color:#40291b;
+}
+
+.yuki-content-intro p{
+    margin:14px auto 0;
+    max-width:650px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:15px;
+    line-height:1.6;
+    color:#765d4b;
+}
+
+
+/* ===== BỐ CỤC CHÍNH ===== */
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:block;
+}
+    max-width:1250px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:minmax(0,2.6fr) minmax(260px,1fr);
+    gap:22px;
+    align-items:stretch;
+}
+
+
+/* ===== HÌNH ẢNH BÊN TRÁI ===== */
+
+.yuki-latest{
+    padding:24px;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:18px;
+}
+
+.yuki-latest-title{
+    margin-bottom:18px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:20px;
+    font-weight:400;
+    letter-spacing:3px;
+    color:#40291b;
+}
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:block;
+}
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.yuki-photo-grid a{
+    display:block;
+    width:100%;
+    height:430px;
+
+    overflow:hidden;
+    border-radius:14px;
+
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+    display:block;
+    height:210px;
+    overflow:hidden;
+    border-radius:12px;
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+
+.yuki-photo-grid img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    transition:transform .4s ease;
+}
+
+.yuki-photo-grid a:hover img{
+    transform:scale(1.04);
+}
+
+
+/* ===== 6 MỤC BÊN PHẢI ===== */
+
+.yuki-content-menu{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.yuki-content-card{
+    flex:1;
+    min-height:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:14px 18px;
+
+    text-decoration:none;
+    background:#ddd2c5;
+
+    border:1px solid #c9ab8d;
+    border-radius:13px;
+
+    transition:all .3s ease;
+}
+
+.yuki-content-card h3{
+    margin:0 0 4px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:17px;
+    font-weight:400;
+    letter-spacing:1.5px;
+    color:#40291b;
+}
+
+.yuki-photo-grid a{
+    display:block;
+    width:100%;
+    height:430px;
+
+    overflow:hidden;
+    border-radius:14px;
+
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+    margin:0;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:12px;
+    line-height:1.4;
+    color:#765d4b;
+}
+
+.yuki-content-card:hover{
+    transform:translateX(-4px);
+    border-color:#c49a5a;
+
+    box-shadow:
+        0 0 6px rgba(196,154,90,.4),
+        0 0 14px rgba(196,154,90,.15);
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:55px 14px 45px;
+    }
+
+    .yuki-content-intro{
+        margin-bottom:30px;
+    }
+
+    .yuki-content-intro h2{
+        font-size:27px;
+        letter-spacing:3px;
+    }
+
+    .yuki-content-intro p{
+        font-size:14px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+    .yuki-latest{
+        padding:18px;
+    }
+
+    .yuki-photo-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .yuki-photo-grid a{
+        height:150px;
+    }
+
+    .yuki-content-menu{
+        gap:10px;
+    }
+
+    .yuki-content-card{
+        min-height:75px;
+    }
+}
+/* ===== YUKI CONTENT - FULL WIDTH BALANCED ===== */
+
+.yuki-content{
+    padding:90px 5%;
+    background:#eee8df;
+}
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:minmax(0,3fr) minmax(250px,1fr);
+    gap:26px;
+}
+
+
+/* ===== GALLERY LỚN BÊN TRÁI ===== */
+
+.yuki-latest{
+    padding:22px;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:20px;
+}
+
+.yuki-latest-title{
+    margin-bottom:22px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:22px;
+    letter-spacing:3px;
+    color:#40291b;
+}
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:block;
+}
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.yuki-photo-grid a{
+    display:block;
+    width:100%;
+    height:430px;
+
+    overflow:hidden;
+    border-radius:14px;
+
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+    display:block;
+    width:100%;
+    height:200px;
+
+    overflow:hidden;
+    border-radius:14px;
+
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+
+.yuki-photo-grid img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:transform .45s ease;
+}
+
+.yuki-photo-grid a:hover img{
+    transform:scale(1.04);
+}
+
+
+/* ===== MENU BÊN PHẢI ===== */
+
+.yuki-content-menu{
+    display:grid;
+    grid-template-rows:repeat(6,1fr);
+    gap:12px;
+}
+
+.yuki-content-card{
+    min-height:0;
+
+    padding:18px 22px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    background:#ddd2c5;
+
+    border:1px solid #c9ab8d;
+    border-radius:15px;
+
+    text-decoration:none;
+
+    transition:all .3s ease;
+}
+
+.yuki-content-card h3{
+    margin:0 0 6px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:18px;
+    font-weight:400;
+    letter-spacing:1.5px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:12px;
+    line-height:1.5;
+    color:#765d4b;
+}
+
+.yuki-content-card:hover{
+    transform:translateX(-5px);
+    border-color:#c49a5a;
+
+    box-shadow:
+        0 0 7px rgba(196,154,90,.4),
+        0 0 15px rgba(196,154,90,.15);
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:55px 14px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .yuki-latest{
+        padding:18px;
+    }
+
+    .yuki-photo-grid{
+        gap:10px;
+    }
+
+    .yuki-photo-grid a{
+        height:190px;
+    }
+
+    .yuki-content-menu{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .yuki-content-card{
+        min-height:100px;
+        padding:15px;
+    }
+
+    .yuki-content-card h3{
+        font-size:15px;
+    }
+
+    .yuki-content-card p{
+        font-size:11px;
+    }
+}
+.yuki-content-menu{
+    width:100%;
+    margin-top:22px;
+
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+}
+
+.yuki-content-card{
+    min-height:90px;
+}
+@media(max-width:700px){
+
+    .yuki-photo-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:10px;
+    }
+
+    .yuki-photo-grid a{
+        height:280px;
+    }
+
+    .yuki-content-menu{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+.yuki-content-grid{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:2.5fr 1fr;
+    gap:22px;
+    align-items:stretch;
+}
+.yuki-photo-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+}
+
+.yuki-photo-grid a{
+    display:block;
+    width:100%;
+    height:360px;
+
+    overflow:hidden;
+    border-radius:14px;
+    border:1px solid #c9ab8d;
+    background:#eee8df;
+}
+
+.yuki-photo-grid img{
+    width:100%;
+    height:100%;
+    display:block;
+
+    /* QUAN TRỌNG: KHÔNG CROP */
+    object-fit:contain;
+    object-position:center;
+}
+/* ===== YUKI GALLERY - 4 ẢNH FULL POSE ===== */
+
+.yuki-content{
+    width:100%;
+    box-sizing:border-box;
+    padding:65px 4%;
+    background:#eee8df;
+}
+
+.yuki-content-grid{
+    width:100%;
+    max-width:1250px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:minmax(0,3fr) 230px;
+    gap:20px;
+    align-items:start;
+}
+
+/* KHUNG 4 ẢNH */
+.yuki-latest{
+    width:100%;
+    box-sizing:border-box;
+    padding:20px;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:16px;
+}
+
+.yuki-latest-title{
+    margin:0 0 15px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:19px;
+    font-weight:400;
+    letter-spacing:2.5px;
+    color:#40291b;
+}
+
+/* 2 ẢNH TRÊN + 2 ẢNH DƯỚI */
+.yuki-photo-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+/* KHUNG ẢNH - GIỮ TỶ LỆ GỐC */
+.yuki-photo-grid a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    overflow:hidden;
+    background:#eee8df;
+    border:1px solid #c9ab8d;
+    border-radius:12px;
+}
+
+/* ẢNH 1,2,3,4 FULL POSE */
+.yuki-photo-grid img{
+    display:block;
+    width:100%;
+    height:auto;
+    max-width:100%;
+    object-fit:contain;
+    object-position:center;
+}
+
+/* ===== 6 MỤC BÊN PHẢI NHỎ GỌN ===== */
+
+.yuki-content-menu{
+    width:230px;
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.yuki-content-card{
+    width:100%;
+    min-height:58px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:9px 13px;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:9px;
+    text-decoration:none;
+}
+
+.yuki-content-card h3{
+    margin:0 0 3px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:10px;
+    line-height:1.3;
+    color:#765d4b;
+}
+
+/* ===== ĐIỆN THOẠI ===== */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:50px 12px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+        gap:15px;
+    }
+
+    .yuki-latest{
+        padding:15px;
+    }
+
+    .yuki-photo-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .yuki-content-menu{
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .yuki-content-card{
+        min-height:65px;
+    }
+}
+/* ===== YUKI CONTENT - FULL WIDTH ===== */
+
+.yuki-content{
+    width:100%;
+    box-sizing:border-box;
+    padding:60px 2%;
+    background:#eee8df;
+}
+
+.yuki-content-grid{
+    width:100%;
+    max-width:none;
+    margin:0;
+
+    display:grid;
+    grid-template-columns:minmax(0,4fr) minmax(220px,1fr);
+    gap:18px;
+
+    align-items:start;
+}
+
+
+/* ===== KHU 4 HÌNH ===== */
+
+.yuki-latest{
+    width:100%;
+    box-sizing:border-box;
+    padding:18px;
+
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:16px;
+}
+
+.yuki-latest-title{
+    margin:0 0 14px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:20px;
+    font-weight:400;
+    letter-spacing:2px;
+    color:#40291b;
+}
+
+.yuki-photo-grid{
+    width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.yuki-photo-grid a{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:#eee8df;
+    border:1px solid #c9ab8d;
+    border-radius:11px;
+}
+
+.yuki-photo-grid img{
+    width:100%;
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
+    object-position:center;
+}
+
+
+/* ===== 6 MỤC BÊN PHẢI ===== */
+
+.yuki-content-menu{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    gap:7px;
+}
+
+.yuki-content-card{
+    width:100%;
+    min-height:62px;
+
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:9px 14px;
+
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:9px;
+
+    text-decoration:none;
+}
+
+.yuki-content-card h3{
+    margin:0 0 3px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:10px;
+    line-height:1.35;
+    color:#765d4b;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:45px 10px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+        gap:14px;
+    }
+
+    .yuki-latest{
+        padding:14px;
+    }
+
+    .yuki-photo-grid{
+        grid-template-columns:1fr 1fr;
+        gap:9px;
+    }
+
+    .yuki-content-menu{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:8px;
+    }
+
+    .yuki-content-card{
+        min-height:65px;
+    }
+}
+/* ===== ZOOM ẢNH VỪA KHUNG - FULL POSE ===== */
+
+.yuki-photo-grid a{
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#eee8df;
+}
+
+.yuki-photo-grid img{
+    width:88%;
+    height:88%;
+    object-fit:contain;
+    object-position:center;
+    display:block;
+}
+/* ===== YUKI - 4 ẢNH + 6 THANH DỌC ===== */
+
+.yuki-content-grid{
+    width:100%;
+    max-width:none;
+    margin:0;
+
+    display:grid;
+    grid-template-columns:minmax(0,4fr) 230px;
+    gap:18px;
+    align-items:start;
+}
+
+/* 4 ẢNH: 2 TRÊN + 2 DƯỚI */
+.yuki-photo-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.yuki-photo-grid a{
+    width:100%;
+    height:330px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+    background:#eee8df;
+
+    border:1px solid #c9ab8d;
+    border-radius:12px;
+}
+
+/* THU NHỎ ẢNH ĐỂ FULL POSE */
+.yuki-photo-grid img{
+    width:84%;
+    height:84%;
+
+    display:block;
+    object-fit:contain;
+    object-position:center;
+}
+
+
+/* 6 MỤC GIỮ DẠNG DỌC */
+.yuki-content-menu{
+    width:230px;
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.yuki-content-card{
+    width:100%;
+    min-height:60px;
+
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:9px 13px;
+
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:9px;
+
+    text-decoration:none;
+}
+
+.yuki-content-card h3{
+    margin:0 0 3px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:10px;
+    line-height:1.35;
+    color:#765d4b;
+}
+
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+    }
+
+    .yuki-photo-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .yuki-photo-grid a{
+        height:260px;
+    }
+
+    .yuki-content-menu{
+        width:100%;
+    }
+
+    .yuki-content-card{
+        min-height:65px;
+    }
+}
+/* ===== YUKI - KHUNG DỌC 4 ẢNH LỚN ===== */
+
+.yuki-content-grid{
+    width:100%;
+    max-width:none;
+    margin:0;
+
+    display:grid;
+    grid-template-columns:minmax(0,4fr) 220px;
+    gap:20px;
+
+    align-items:stretch;
+}
+
+/* KHUNG BÊN TRÁI DẠNG DỌC */
+.yuki-latest{
+    width:100%;
+    box-sizing:border-box;
+
+    padding:20px;
+
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:18px;
+}
+
+/* 4 ẢNH - 2 TRÊN + 2 DƯỚI */
+.yuki-photo-grid{
+    width:100%;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+/* KHUNG ẢNH DỌC */
+.yuki-photo-grid a{
+    width:100%;
+    height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:#eee8df;
+    border:1px solid #c9ab8d;
+    border-radius:12px;
+}
+
+/* ẢNH TO - GIỮ NGUYÊN FULL POSE */
+.yuki-photo-grid img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:contain;
+    object-position:center;
+}
+
+
+/* ===== 6 MỤC DỌC BÊN PHẢI ===== */
+
+.yuki-content-menu{
+    width:220px;
+
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.yuki-content-card{
+    width:100%;
+    min-height:58px;
+
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:10px 13px;
+
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:9px;
+
+    text-decoration:none;
+}
+
+.yuki-content-card h3{
+    margin:0 0 3px;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:1px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:10px;
+    line-height:1.35;
+    color:#765d4b;
+}
+
+
+/* ===== ĐIỆN THOẠI ===== */
+
+@media(max-width:700px){
+
+    .yuki-content-grid{
+        grid-template-columns:1fr;
+    }
+
+    .yuki-photo-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .yuki-photo-grid a{
+        height:420px;
+    }
+
+    .yuki-content-menu{
+        width:100%;
     }
 }
