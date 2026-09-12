@@ -1,4 +1,497 @@
-<div class="service-card">
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>YUKI — Digital & AI</title>
+
+<style>
+
+/* ===== RESET ===== */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Georgia,"Times New Roman",serif;
+    background:#eee8df;
+    color:#40291b;
+    line-height:1.7;
+}
+
+
+/* ===== HEADER ===== */
+
+header{
+    height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 7%;
+
+    background:#eee8df;
+
+    border-bottom:1px solid #d2b99d;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:400;
+    letter-spacing:6px;
+    color:#4a3020;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#654b3b;
+    text-decoration:none;
+
+    font-size:13px;
+    letter-spacing:1.5px;
+
+    transition:.25s;
+}
+
+nav a:hover{
+    color:#a47742;
+}
+
+
+/* ===== HERO ===== */
+
+.hero{
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:105px 25px 90px;
+
+    text-align:center;
+}
+
+.eyebrow{
+    margin-bottom:24px;
+
+    color:#a47742;
+
+    font-size:11px;
+    letter-spacing:6px;
+}
+
+.hero h1{
+    color:#3d281b;
+
+    font-size:58px;
+    font-weight:400;
+
+    line-height:1.15;
+
+    letter-spacing:2px;
+}
+
+.divider{
+    width:80px;
+    height:1px;
+
+    margin:35px auto;
+
+    background:#b99261;
+}
+
+.hero p{
+    max-width:680px;
+
+    margin:auto;
+
+    color:#786455;
+
+    font-size:17px;
+
+    line-height:1.9;
+}
+
+
+/* ===== SERVICES ===== */
+
+.services{
+    max-width:1180px;
+
+    margin:auto;
+
+    padding:20px 30px 100px;
+}
+
+.services-intro{
+    text-align:center;
+
+    margin-bottom:55px;
+}
+
+.services-intro h2{
+    color:#40291b;
+
+    font-size:33px;
+    font-weight:400;
+
+    letter-spacing:4px;
+
+    margin-bottom:15px;
+}
+
+.services-intro p{
+    color:#806f61;
+
+    font-size:15px;
+}
+
+
+/* ===== GRID ===== */
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+}
+
+
+/* ===== CARD ===== */
+
+.service-card{
+    position:relative;
+
+    min-height:225px;
+
+    padding:40px 30px 32px;
+
+    background:#f7f2eb;
+
+    border:1px solid #cdb69c;
+
+    border-radius:18px;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+/* GOLD DETAIL */
+
+.service-card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:30px;
+
+    width:45px;
+    height:2px;
+
+    background:#b99261;
+}
+
+
+/* HOVER */
+
+.service-card:hover{
+    transform:translateY(-5px);
+
+    border-color:#b89261;
+
+    box-shadow:
+        0 14px 32px rgba(70,45,25,.10);
+}
+
+
+/* TITLE */
+
+.service-card h3{
+    color:#422c1e;
+
+    font-size:23px;
+
+    font-weight:400;
+
+    line-height:1.35;
+
+    margin-bottom:14px;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p{
+    color:#766456;
+
+    font-size:15px;
+
+    line-height:1.75;
+}
+
+
+/* FEATURED */
+
+.service-card.featured{
+    background:#e8ded1;
+
+    border-color:#b99362;
+
+    box-shadow:
+    0 0 8px rgba(185,147,98,.18);
+}
+
+
+/* ===== CTA ===== */
+
+.cta{
+    max-width:850px;
+
+    margin:10px auto 100px;
+
+    padding:65px 30px;
+
+    text-align:center;
+
+    border-top:1px solid #cdb69c;
+    border-bottom:1px solid #cdb69c;
+}
+
+.cta h2{
+    color:#40291b;
+
+    font-size:32px;
+    font-weight:400;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+}
+
+.cta p{
+    color:#756254;
+
+    font-size:17px;
+
+    margin-bottom:28px;
+}
+
+.cta a{
+    display:inline-block;
+
+    padding:12px 30px;
+
+    border:1px solid #a98455;
+
+    border-radius:30px;
+
+    color:#63472f;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    letter-spacing:1.5px;
+
+    transition:.25s;
+}
+
+.cta a:hover{
+    background:#a98455;
+    color:#fff;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer{
+    padding:30px 20px;
+
+    text-align:center;
+
+    border-top:1px solid #d2b99d;
+
+    color:#8a7665;
+
+    font-size:13px;
+}
+
+
+/* ===== MOBILE ===== */
+
+@media(max-width:800px){
+
+    header{
+        height:auto;
+
+        padding:22px 20px;
+
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    nav{
+        gap:16px;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:11px;
+    }
+
+    .hero{
+        padding:70px 22px 60px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    .services{
+        padding:10px 16px 70px;
+    }
+
+    .services-intro h2{
+        font-size:27px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+
+        gap:16px;
+    }
+
+    .service-card{
+        min-height:auto;
+
+        padding:36px 25px 30px;
+    }
+
+    .service-card h3{
+        font-size:21px;
+    }
+
+    .service-card p{
+        font-size:14px;
+    }
+
+    .cta{
+        margin:10px 20px 70px;
+
+        padding:50px 20px;
+    }
+
+    .cta h2{
+        font-size:27px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">YUKI</div>
+
+    <nav>
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="index.html#dich-vu">DỊCH VỤ</a>
+        <a href="yuki-art.html">YUKI ART</a>
+        <a href="lienhe.html">LIÊN HỆ</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="eyebrow">
+        DIGITAL & AI
+    </div>
+
+    <h1>
+        Kết nối đúng<br>
+        khách hàng
+    </h1>
+
+    <div class="divider"></div>
+
+    <p>
+        Giải pháp Digital giúp thương hiệu tiếp cận đúng người,
+        phát triển kênh và tạo thêm cơ hội kinh doanh.
+    </p>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services">
+
+    <div class="services-intro">
+
+        <h2>DỊCH VỤ DIGITAL</h2>
+
+        <p>
+            Tập trung vào khả năng tiếp cận, tương tác và phát triển thương hiệu.
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="service-card featured">
+
+            <h3>Khách hàng tiềm năng</h3>
+
+            <p>
+                Tìm kiếm và tiếp cận nhóm khách hàng phù hợp
+                với sản phẩm, dịch vụ và mục tiêu kinh doanh.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
 
             <h3>Phát triển Follow</h3>
 
@@ -99,6 +592,8 @@
 </section>
 
 
+<!-- CTA -->
+
 <section class="cta">
 
     <h2>Digital đúng cách</h2>
@@ -113,6 +608,8 @@
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
