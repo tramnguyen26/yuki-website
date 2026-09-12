@@ -1870,3 +1870,136 @@ grid-template-columns:1fr;
         font-size:27px;
     }
 }
+/* ===== YUKI CONTENT – 6 MỤC ===== */
+
+.yuki-content{
+    padding:80px 6% 70px;
+    background:#eee8df;
+    border-top:1px solid #d2b99d;
+}
+
+.yuki-content-intro{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.yuki-content-line{
+    width:55px;
+    height:1px;
+    background:#b89468;
+    margin:0 auto 25px;
+}
+
+.yuki-content-intro h2{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:38px;
+    font-weight:400;
+    letter-spacing:5px;
+    color:#40291b;
+}
+
+.yuki-content-intro p{
+    margin:16px auto 0;
+    max-width:650px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:16px;
+    line-height:1.7;
+    color:#765d4b;
+}
+
+/* GRID */
+
+.yuki-content-grid{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/* CARD */
+
+.yuki-content-card{
+    min-height:190px;
+    padding:30px 28px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    text-decoration:none;
+    background:#ddd2c5;
+    border:1px solid #c9ab8d;
+    border-radius:18px;
+    transition:all .3s ease;
+}
+
+.yuki-content-card h3{
+    margin:0 0 10px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:22px;
+    font-weight:400;
+    letter-spacing:2px;
+    color:#40291b;
+}
+
+.yuki-content-card p{
+    margin:0;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:14px;
+    line-height:1.6;
+    color:#705f52;
+}
+
+/* HOVER */
+
+.yuki-content-card:hover{
+    transform:translateY(-5px);
+    border-color:#c49a5a;
+    box-shadow:
+        0 0 6px rgba(196,154,90,.45),
+        0 0 16px rgba(196,154,90,.18);
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    .yuki-content{
+        padding:55px 14px 45px;
+    }
+
+    .yuki-content-intro{
+        margin-bottom:30px;
+    }
+
+    .yuki-content-intro h2{
+        font-size:28px;
+        letter-spacing:3px;
+    }
+
+    .yuki-content-intro p{
+        font-size:14px;
+        padding:0 10px;
+    }
+
+    .yuki-content-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .yuki-content-card{
+        min-height:180px;
+        padding:20px 17px;
+        border-radius:14px;
+    }
+
+    .yuki-content-card h3{
+        font-size:17px;
+        letter-spacing:1px;
+    }
+
+    .yuki-content-card p{
+        font-size:12px;
+        line-height:1.5;
+    }
+}
