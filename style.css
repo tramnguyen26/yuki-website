@@ -6,3 +6,7 @@
 .hero{width:100%;height:auto;min-height:0;aspect-ratio:3/1;display:block;padding:0;background-color:var(--cream);background-position:center top;background-size:100% auto;background-repeat:no-repeat}
 .hero-shade,.hero-copy,.scroll-cue{display:none}
 @media(max-width:600px){.hero{height:auto;min-height:0;aspect-ratio:3/1;padding:0;background-position:center top;background-size:100% auto}}
+
+.service-card.full{grid-column:1/-1;height:360px;background-position:center 38%}
+@media(max-width:900px){.service-card.full{grid-column:1/-1}}
+@media(max-width:600px){.service-card.full{grid-column:auto;height:410px}}
