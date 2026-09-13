@@ -11,10 +11,12 @@
 @media(max-width:900px){.service-card.full{grid-column:1/-1}}
 @media(max-width:600px){.service-card.full{grid-column:auto;height:410px}}
 
-/* Professional vector-style arrows: avoids emoji rendering on iPhone. */
-.icon-arrow{position:relative;display:inline-block;width:14px;height:14px;flex:0 0 14px;vertical-align:-2px;border:0!important;padding:0!important}
-.icon-arrow::before{content:"";position:absolute;left:2px;bottom:2px;width:11px;height:1px;background:currentColor;transform:rotate(-45deg);transform-origin:center}
-.icon-arrow::after{content:"";position:absolute;right:1px;top:1px;width:6px;height:6px;border-top:1px solid currentColor;border-right:1px solid currentColor}
-.text-link,.card-link,.button-light{display:inline-flex;align-items:center;gap:10px}
-.card-link .icon-arrow{transition:transform .3s ease}.service-card:hover .card-link .icon-arrow,.button-light:hover .icon-arrow,.text-link:hover .icon-arrow{transform:translate(2px,-2px)}
-.floating-contact .icon-arrow{width:30px;height:30px;border:1px solid #ccb083!important;border-radius:50%;margin-left:4px}.floating-contact .icon-arrow::before{left:8px;bottom:8px}.floating-contact .icon-arrow::after{right:7px;top:7px}
+
+/* Crisp SVG arrows and recognizable Zalo action. */
+.icon-arrow{display:inline-block;width:16px;height:16px;flex:0 0 16px;vertical-align:-3px;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s ease}
+.text-link,.card-link,.button-light{display:inline-flex;align-items:center;gap:9px}
+.service-card:hover .icon-arrow,.button-light:hover .icon-arrow,.text-link:hover .icon-arrow{transform:translate(2px,-2px)}
+.floating-contact{border:1px solid rgba(48,113,226,.16);border-radius:14px;padding:9px 12px 9px 9px}
+.floating-contact>.zalo-logo{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:#2878f0;color:#fff;font:700 13px/1 Arial,sans-serif;letter-spacing:-.7px;box-shadow:0 5px 14px rgba(40,120,240,.24)}
+.floating-contact .icon-arrow{width:17px;height:17px;margin-left:5px;color:#2878f0}
+@media(max-width:600px){.floating-contact{right:14px;bottom:14px;padding:7px}.floating-contact>.zalo-logo{width:42px;height:42px}.floating-contact .icon-arrow{display:none}}
