@@ -20,3 +20,18 @@
 .floating-contact>.zalo-logo{display:grid;place-items:center;width:42px;height:42px;border-radius:11px;background:#2878f0;color:#fff;font:700 13px/1 Arial,sans-serif;letter-spacing:-.7px;box-shadow:0 5px 14px rgba(40,120,240,.24)}
 .floating-contact .icon-arrow{width:17px;height:17px;margin-left:5px;color:#2878f0}
 @media(max-width:600px){.floating-contact{right:14px;bottom:14px;padding:7px}.floating-contact>.zalo-logo{width:42px;height:42px}.floating-contact .icon-arrow{display:none}}
+
+/* Premium contact action inside the sliding navigation. */
+.nav-contact{display:inline-flex!important;align-items:center;gap:9px}
+.nav-zalo,.nav-contact-arrow{display:none}
+@media(max-width:900px){
+ .nav-links{padding:30px 24px 28px;gap:0}
+ .nav-links>a{padding:17px 2px;border-bottom:1px solid var(--line);font:400 13px/1 'DM Sans';letter-spacing:.18em}
+ .nav-links>a:after{display:none}
+ .nav-links .nav-contact{margin-top:22px;padding:10px 11px 10px 10px;border:1px solid #b8925f;border-radius:14px;background:#29201b;color:#fff;box-shadow:0 14px 34px rgba(41,32,27,.16);min-height:60px}
+ .nav-contact .nav-zalo{display:grid;place-items:center;width:38px;height:38px;border-radius:10px;background:#2878f0;color:#fff;font:700 12px/1 Arial,sans-serif;letter-spacing:-.6px}
+ .nav-contact>span:nth-child(2){font-size:11px;letter-spacing:.2em;margin-left:3px}
+ .nav-contact-arrow{display:block;width:18px;height:18px;margin-left:auto;fill:none;stroke:#d6b77e;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+ .menu-open .nav-contact-arrow{animation:contactArrow .45s .18s both}
+}
+@keyframes contactArrow{from{opacity:0;transform:translate(-4px,4px)}to{opacity:1;transform:none}}
